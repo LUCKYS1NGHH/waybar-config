@@ -1,0 +1,76 @@
+{
+  "position": "top",
+  "height": 35,
+  "margin-top": 9,
+
+  "custom/updates": {
+    "exec": "checkupdates | wc -l",
+    "interval": 620,
+    "format": "󰏖 {} Updates"
+  },
+
+  "custom/arch": {
+     "format": " "
+  },
+
+  "custom/cpu": {
+    "exec": "top -bn1 | grep 'Cpu(s)' | awk '{print $2+$4\"%\"}'",
+    "interval": 3,
+    "format": "CPU {}  "
+  },
+
+  "custom/uptime": {
+    "exec": "uptime -p",
+    "interval": 620
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  },
+
+  "modules-left": [
+    "custom/arch",
+    "hyprland/language",
+    "custom/updates",
+    "custom/cpu"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces",
+  ],
+
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "network",
+    "battery",
+    "clock"
+  ],
+
+  "clock": {
+    "format": "  {:%I:%M %p %a}"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "  muted"
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰱓 Connected",
+    "format-disconnected": "󰅛 No Network"
+  },
+
+  "battery": {
+    "format": "  {capacity}%",
+    "format-charging": "{capacity}%",
+    "format-full": "  100%",
+    "states": {
+      "good": 85,
+      "warning": 35,
+      "critical": 15
+    }
+  }
+}

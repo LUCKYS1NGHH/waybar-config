@@ -1,0 +1,86 @@
+* {
+    font-family: "FiraCode Nerd Font", "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    border: none;
+}
+
+window#waybar {
+    background: transparent;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Main container */
+#waybar {
+    margin: 5px 10px 0 10px;
+}
+
+.modules-left {
+    color: #bfbfbf;
+    padding: 0 10px;
+    margin: 0 10px;
+    margin-left: 15px;
+}
+
+.modules-right {
+   margin-right: 13px;
+}
+
+#language {
+    margin-left: 15px;
+}
+
+#custom-updates {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#custom-arch {
+    margin-left: 15px;
+    color: #5d98fc;
+}
+
+/* Bar background block */
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: rgba(10, 18, 35, 0.85);
+    border-radius: 10px;
+    padding: 3px 2px;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 1px 10px;
+    margin: 0 1.91px;
+    border-radius: 7px;
+    background: rgba(30, 41, 59, 0.5);
+    color: #42518c;
+    transition: 0.2s;
+}
+
+#workspaces button.active {
+    background: #2d81e0;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: #489cfa;
+    color: #ffffff;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#tray {
+    padding: 2 12px;
+    color: #cbd5e1;
+}
+
+/* Volume highlight when muted */
+#pulseaudio.muted {
+    color: #ef4444;
+}
