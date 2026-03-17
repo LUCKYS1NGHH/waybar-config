@@ -2,15 +2,24 @@
 
 My Waybar configuration files for Arch Linux + HyprLand Setup
 
-## Screenshot
+## Screenshots
 
-![Waybar Screenshot](screenshot.png)
+#### 1
+![Waybar Style Screenshot 1](screenshot_1.png)
+#### 2
+![Waybar Style Screenshot 2](screenshot_2.png)
 
-## Setup
+## Setup 
 ```bash
 git clone https://github.com/LUCKYS1NGHH/waybar-config
 cd waybar-config
 mkdir -p ~/.config/waybar
+```
+
+> Choose the style by screenshots and come inside that directory.
+> example: `cd 1`
+
+```bash
 cp config.jsonc ~/.config/waybar
 cp style.css ~/.config/waybar
 ```
