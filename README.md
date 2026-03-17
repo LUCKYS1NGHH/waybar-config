@@ -17,9 +17,8 @@ mkdir -p ~/.config/waybar
 ```
 
 > Choose the style by screenshots and come inside that directory.
-> example: `cd 1`
+> example:
 
 ```bash
-cp config.jsonc ~/.config/waybar
-cp style.css ~/.config/waybar
+cp -r 1/ ~/.config/waybar
 ```
