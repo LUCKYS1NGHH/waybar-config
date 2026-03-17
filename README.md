@@ -5,9 +5,9 @@ My Waybar configuration files for Arch Linux + HyprLand Setup
 ## Screenshots
 
 #### 1
-![Waybar Style Screenshot 1](screenshot_1.png)
+![Waybar Style Screenshot 1](screenshots/1.png)
 #### 2
-![Waybar Style Screenshot 2](screenshot_2.png)
+![Waybar Style Screenshot 2](screenshots/2.png)
 
 ## Setup 
 ```bash
