@@ -62,6 +62,7 @@ window#waybar {
 
 /* modules colors */
 #clock { color: #67a9f0; }
+#custom-weather { color: #bfbfbf }
 #custom-updates { color: @cyan; }
 #backlight { color: @yellow; }
 #pulseaudio { color: @blue; }

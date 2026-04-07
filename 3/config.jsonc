@@ -32,6 +32,14 @@
     }
   },
 
+  "custom/weather": {
+    "tooltip": true,
+    "format": "{} ",
+    "interval": 3600,
+    "exec": "~/.config/waybar/scripts/waybar-wttr.py",
+    "return-type": "json"
+  },
+
   "custom/swaync": {
     "format": "{icon}{text}",
     "format-icons": {
