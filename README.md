@@ -25,3 +25,6 @@ mkdir -p ~/.config/waybar
 ```bash
 cp -r 1/* ~/.config/waybar/
 ```
+
+> [!NOTE]
+There are few configs like `3` which have scripts (e.g., `waybar-wttr.py`, `wallpaper-changer.sh`) need to configure little bit. for example weather city and wallpaper change path
