@@ -1,6 +1,6 @@
-# Waybar config
+# Waybar configs
 
-My Waybar configuration files for Arch Linux + HyprLand Setup
+My Waybar configuration files for Arch Linux + Hyprland Setup
 
 ## Screenshots
 
@@ -8,10 +8,8 @@ My Waybar configuration files for Arch Linux + HyprLand Setup
 ![Waybar Style Screenshot 1](screenshots/1.png)
 #### 2
 ![Waybar Style Screenshot 2](screenshots/2.png)
-
 #### 3
 ![Waybar_Style_Screenshot_3](screenshots/3.png)
-
 #### 4
 ![Waybar_Style_Screenshot_4](screenshots/4.png)
 
@@ -32,4 +30,4 @@ cp -r 1/* ~/.config/waybar/
 ```
 
 > [!NOTE]
-There are few configs like `3` which have scripts (e.g., `waybar-wttr.py`, `wallpaper-changer.sh`) need to configure little bit. for example weather city and wallpaper change path
+There are few configs like `3` and `4` which have scripts (e.g., `waybar-wttr.py`, `wallpaper-changer.sh`) need to configure a little bit, for example city name for weather and directory path of wallpapers.
