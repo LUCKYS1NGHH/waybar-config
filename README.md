@@ -1,4 +1,4 @@
-# Waybar configs
+# Waybar configs collections
 
 My Waybar configuration files for Arch Linux + Hyprland Setup
 
