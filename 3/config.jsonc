@@ -5,6 +5,11 @@
   "height": 20,
   "margin-top": 10,
 
+  "custom/arch": {
+     "format": "  ",
+      "tooltip-format": "Arch Linux (Hyprland)"
+  },
+
   "custom/updates": {
     "exec": "checkupdates | wc -l",
     "interval": 620,
@@ -19,17 +24,10 @@
     "tooltip-format": "wlogout"
   },
 
-  "custom/wallpaper-changer": {
-    "format": "󰸉",
-    "on-click": "~/.local/bin/wallpaper-change.sh",
-    "tooltip": true,
-    "tooltip-format": "Click to change wallpaper"
-  },
-
   "custom/cpu": {
     "exec": "top -bn1 | grep 'Cpu(s)' | awk '{print $2+$4\"%\"}'",
     "interval": 3,
-    "format": "  {}"
+    "format": " {}"
   },
 
   "hyprland/workspaces": {
@@ -53,22 +51,35 @@
         "notification": "󰂚 ",
         "none": "󰂜 ",
         "dnd-notification": "󰂛 ",
-        "dnd-none": "󰂛 "
+        "dnd-none": "󰂛 ",
+        "inhibited-notification": "󰂚 ",
+        "inhibited-none": "󰂜 "
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
+    "on-click-middle": "swaync-client -C -sw",
+    "tooltip": true,
     "escape": true
   },
 
+  "custom/wallpaper-changer": {
+    "format": "󰸉",
+    "on-click": "~/.config/waybar/scripts/wallpaper-change.sh",
+    "tooltip": true,
+    "tooltip-format": "Click to change wallpaper"
+  },
+
   "modules-center": [
+    "custom/arch",
     "clock",
     "hyprland/workspaces",
     "custom/weather",
     "custom/wallpaper-changer",
     "custom/updates",
+    "custom/cpu",
     "backlight",
     "pulseaudio",
     "network",
@@ -79,7 +90,7 @@
   ],
 
   "clock": {
-    "format": "  󰥔 {:%I:%M %p}",
+    "format": "󰥔 {:%I:%M %p}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
         "mode": "month",
@@ -92,8 +103,8 @@
   },
 
   "pulseaudio": {
-    "format": "  {volume}%",
-    "format-muted": "  muted",
+    "format": " {volume}%",
+    "format-muted": " muted",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
     "on-click": "pavucontrol",
@@ -101,10 +112,10 @@
   },
 
   "network": {
-    "format-wifi": "󰤢  {}",
-    "format-ethernet": "󰈀  {ipaddr}",
+    "format-wifi": "󰤢 {}",
+    "format-ethernet": "󰈀 {ipaddr}",
     "exec": "iwgetid -r",
-    "format-linked": "󰈀  {ifname} {No IP}",
+    "format-linked": "󰈀 {ifname} {No IP}",
     "format-disconnected": " Disconnected",
     "tooltip-format": "{ifname} via {gwaddr}\nIP: {ipaddr}\nStrength: {signalStrength}%",
     "on-click": "nm-applet"
@@ -112,16 +123,16 @@
 
   "backlight": {
     "device": "intel_backlight",
-    "format": "  {percent}%",
+    "format": " {percent}%",
     "tooltip": false,
     "on-scroll-up": "brightnessctl set +2%",
     "on-scroll-down": "brightnessctl set 2%-",
   },
 
   "battery": {
-    "format": "{icon} {capacity}%",
+    "format": "{icon}{capacity}%",
     "format-charging": "󱐋 {capacity}%",
-    "format-full": "  100%",
+    "format-full": " 100%",
     "format-icons": [
       " ",
       " ",
