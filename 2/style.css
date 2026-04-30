@@ -41,13 +41,14 @@ window#waybar {
 #custom-distro-icon,
 #clock,
 #custom-cpu,
+#custom-weather,
 #custom-updates,
 #backlight,
 #tray,
 #pulseaudio,
 #network,
 #battery,
-#custom-weather,
+#custom-swaync,
 #custom-wlogout {
     padding: 0 12px;
     margin: 4px 8px;        /* this creates the gap */
@@ -89,6 +90,10 @@ window#waybar {
 
 #battery {
   color: #76d685;
+}
+
+#custom-swaync {
+  color: #ebba8d;
 }
 
 #custom-wlogout {

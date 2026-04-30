@@ -40,6 +40,23 @@
     "tooltip-format": "Arch Linux (Hyprland)"
   },
 
+  "custom/swaync": {
+   "format": "{icon} {text}",
+   "format-icons": {
+        "notification": "󰂚",
+        "none": "󰂜",
+        "dnd-notification": "󰂛",
+        "dnd-none": "󰂛"
+   },
+   "return-type": "json",
+   "exec-if": "which swaync-client",
+   "exec": "swaync-client -swb",
+   "on-click": "swaync-client -t -sw",
+   "on-click-middle": "swaync-client -C -sw",
+   "on-click-right": "swaync-client -d -sw",
+   "escape": true
+  },
+
   "modules-left": [
     "custom/distro-icon",
     "clock",
@@ -58,6 +75,7 @@
     "pulseaudio",
     "network",
     "battery",
+    "custom/swaync",
     "custom/wlogout"
   ],
 
@@ -76,7 +94,7 @@
 
   "pulseaudio": {
     "format": " {volume}%",
-    "format-muted": "  muted",
+    "format-muted": " muted",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
     "on-click": "pavucontrol",
