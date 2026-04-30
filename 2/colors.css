@@ -1,7 +1,7 @@
-@define-color bg #292e36;
+@define-color bg #282e38;
 
-@define-color workspace-button-bg #24292e;
-@define-color workspace-button-fg #6e747c;
+@define-color workspace-button-bg #363f47;
+@define-color workspace-button-fg #7d8893;
 @define-color workspace-button-hover-bg #94afe7;
 @define-color workspace-button-hover-fg #000000;
 @define-color workspace-button-active-bg #7096ee;
@@ -10,7 +10,7 @@
 @define-color audio-fg #7ea4f1;
 @define-color audio-muted-fg #e6605c;
 
-@define-color brightness-fg #dbd06d;
+@define-color brightness-fg #cfb664;
 
 @define-color battery-fg #7cdb7b;
 
