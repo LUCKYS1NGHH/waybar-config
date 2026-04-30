@@ -1,3 +1,5 @@
+@import 'colors.css';
+
 * {
     font-family: "FiraCode Nerd Font Propo", "JetBrainsMono Nerd Font Propo", sans-serif;
     font-size: 10px;
@@ -12,30 +14,31 @@ window#waybar {
 
 /* Workspaces */
 #workspaces {
-    padding: 0 2.7px;
-    margin: 0 5px;
-    background: #212b3b;
+    padding: 0 2.5px;
+    margin: 0 1px;
+    background: @bg;
     border-radius: 18px;
 }
 
 #workspaces button {
     padding: 0 7px;
-    margin: 4px 2px;
+    margin: 4.5px 2px;
     border-radius: 15px;
-    background: #172130;
-    color: #2a348e;
+    background: @workspace-button-bg;
+    color: @workspace-button-fg;
     transition: 0.23s;
 }
 
 #workspaces button.active {
-    background: #4088e6;
-    color: #ffffff;
-    padding: 0 23px;
+    background: @workspace-button-active-bg;
+    color: @workspace-button-active-fg;
+    padding: 0 22px;
 }
 
 #workspaces button:hover {
-    background: #ffffff;
-    color: #000000;
+    background: @workspace-button-hover-bg;
+    color: @workspace-button-hover-fg;
+    padding: 0 20px;
 }
 
 #custom-distro-icon,
@@ -43,8 +46,8 @@ window#waybar {
 #custom-cpu,
 #custom-weather,
 #custom-updates,
-#backlight,
 #tray,
+#backlight,
 #pulseaudio,
 #network,
 #battery,
@@ -52,49 +55,22 @@ window#waybar {
 #custom-wlogout {
     padding: 0 12px;
     margin: 3px 5px;        /* this creates the gap */
-    background: #1e293b;    /* module box color */
+    background: @bg;    /* module box color */
     border-radius: 10px;    /* rounded box */
 }
 
-#clock {
-  color: #69b6f0;
-}
+#custom-distro-icon { color: @distro-logo; }
+#clock { color: @clock-fg; }
+#custom-weather { color: @weather-text; }
+#custom-cpu { color: @cpu-fg; }
 
-#custom-cpu {
-  color: #e69360;
-}
-
-#custom-weather {
-  color: #c4c2c2;
-}
-
-#custom-updates {
-  color: #6aaed4;
-}
-
-#backlight {
-   color: #e0cb5e;
-}
-
-#pulseaudio {
-  color: #6da8fc;
-}
-
-#network {
-  color: #dd86eb;
-}
-
-#battery {
-  color: #76d685;
-}
-
-#custom-swaync {
-  color: #ebba8d;
-}
-
-#custom-wlogout {
-  color: #bfbfbf;
-}
+#custom-updates { color: @updates-fg; }
+#backlight { color: @brightness-fg; }
+#pulseaudio { color: @audio-fg; }
+#network { color: @network-fg; }
+#battery { color: @battery-fg; }
+#custom-swaync { color: @swaync-fg; }
+#custom-wlogout { color: @wlogout-fg; }
 
 /* Volume highlight when muted */
 #pulseaudio.muted {
@@ -103,12 +79,12 @@ window#waybar {
 
 tooltip {
     background: rgba(27, 27, 36, 1);
-    border: 1px solid #89b4fa;
+    border: 1px solid @tooltip-border;
     border-radius: 8px;
 }
 
 tooltip label {
-    color: #bbcafa;
+    color: @tooltip-fg;
     font-size: 12px;
     padding: 5px;
 }
