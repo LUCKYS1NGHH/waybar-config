@@ -6,27 +6,27 @@ My Waybar configuration files for Arch Linux + Hyprland Setup
 
 <p align="center">1 - Arctic Islands</p>
 
-![Waybar Style Screenshot 1](screenshots/1.png)
+![3 floating blocks, rounded block workspaces, dark-blue BG, white icons](screenshots/1.png)
 
 <p align="center">2 - Floating blocks</p>
 
-![Waybar Style Screenshot 2](screenshots/2.png)
+![Floating rounded blocks, pill workspaces, dark-gray BG, white icons](screenshots/2.png)
 
 <p align="center">3 - Pill Bar</p>
 
-![Waybar Style Screenshot 3](screenshots/3.png)
+![Single pill island, pill workspaces, dark-gray BG, colorful icons](screenshots/3.png)
 
 <p align="center">4 - Glass Islands</p>
 
-![Waybar Style Screenshot 4](screenshots/4.png)
+![3 floating blocks, rounded block/rectange workspaces, dark-gray BG, colorful icons](screenshots/4.png)
 
 <p align="center">5 - Monochrome strip</p>
 
-![Waybar Style Screenshot 5](screenshots/5.png)
+![Stripped monochrome bar, rounded block/rectange workspaces, dark-gray BG, light-gray icons](screenshots/5.png)
 
 <p align="center">6 - Chrome Gloss</p>
 
-![Waybar Style Screenshot 6](screenshots/6.png)
+![Floating rounded blocks, rounded block/rectangle workspaces, a bit transparent dark-gray BG, colorful icons](screenshots/6.png)
 
 ----
 
