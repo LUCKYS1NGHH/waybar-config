@@ -1,0 +1,99 @@
+@import 'colors.css';
+
+* {
+    font-family: "JetBrainsMono Nerd Font Propo", "FiraCode Nerd Font Propo", "Noto Sans CJK TC Medium", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+    margin: 5px 5px 0 5px;
+    transition: 0.22s;
+    padding: 0 50px;
+}
+
+/* Workspaces */
+#workspaces {
+    background: @bg;
+}
+
+#workspaces button {
+    padding: 0 3px;
+    min-width: 10px;
+    min-height: 2px;
+    margin: 8px;
+    background: @workspace-button-bg;
+    color: @workspace-button-fg;
+    transition: 0.15s;
+    border-radius: 10px;
+}
+
+#workspaces button.active {
+    background: @workspace-button-active-bg;
+    color: @workspace-button-active-fg;
+    padding: 0 18px;
+}
+
+#workspaces button:hover {
+    background: @workspace-button-hover-bg;
+    color: @workspace-button-hover-fg;
+    padding: 0 12px;
+}
+
+#tray,
+#backlight,
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#mpris,
+#custom-arch,
+#custom-cpu,
+#custom-weather,
+#custom-updates,
+#custom-wlogout,
+#custom-swaync {
+  padding: 0 9px;
+  background: @bg;    /* module box color */
+  border-radius: 0;    /* rounded box */
+}
+
+/* left-right modules border radius */
+#custom-arch { border-radius: 0px 0px 0px 15px; }
+#custom-wlogout { border-radius: 0px 0px 15px 0px; }
+
+/* modules colors */
+#clock { color: @clock-fg; }
+#custom-weather { color: @weather-text; }
+#custom-wallpaper-changer { color: @wp-changer-fg; }
+#custom-updates { color: @updates-fg; }
+#backlight { color: @brightness-fg; }
+#pulseaudio { color: @audio-fg; }
+#network { color: @network-fg; }
+#battery { color: @battery-fg; }
+#custom-wlogout { color: @wlogout-fg; }
+#custom-swaync { color: @swaync-fg; }
+#custom-cpu { color: @cpu-fg; }
+#mpris { color: @mpris-fg; transition: 0.35s; }
+
+/* Modules states */
+#pulseaudio.muted { color: @audio-muted-fg; }
+#battery.warning { color: @battery-fg-warning; }
+#battery.critical { color: @battery-fg-critical; }
+#mpris.paused { color: @mpris-fg-paused; }
+
+tooltip {
+  background: @tooltip-bg;
+  border: 1px solid @tooltip-border;
+  border-radius: 9px;
+}
+
+tooltip label {
+  color: @tooltip-fg;
+  font-size: 12px;
+  padding: 6px;
+}

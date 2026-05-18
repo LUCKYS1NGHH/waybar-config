@@ -32,6 +32,10 @@ My Waybar configuration files for Arch Linux + Hyprland Setup
 
 ![3 modules in left side included workspaces, other modules icon in right, a bit transparent dark-gray BG with, light-gray icons](screenshots/7.png)
 
+<p align="center">8 - Attached Bar</p>
+
+![Single top attached bar, gray pill shape workspaces, dark-gray BG, colorful icons](screenshots/8.png)
+
 ----
 
 ## Setup
