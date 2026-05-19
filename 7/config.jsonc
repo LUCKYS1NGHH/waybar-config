@@ -19,6 +19,13 @@
     "tooltip-format": "wlogout"
   },
 
+  "custom/updates": {
+    "exec": "checkupdates | wc -l",
+    "interval": 620,
+    "format": "󰏖 {}",
+    "tooltip-format": "{} updates available"
+  },
+
   "hyprland/workspaces": {
     "format": "●",
     "persistent-workspaces": {
@@ -54,6 +61,7 @@
 
   "modules-right": [
     "tray",
+    "custom/updates",
     "backlight",
     "pulseaudio",
     "network",
