@@ -29,7 +29,7 @@
   "custom/cpu": {
     "exec": "top -bn1 | grep 'Cpu(s)' | awk '{print $2+$4\"%\"}'",
     "interval": 3,
-    "format": "  {}"
+    "format": "{}"
   },
 
   "hyprland/workspaces": {
@@ -57,12 +57,12 @@
   },
 
   "custom/swaync": {
-    "format": "{icon}{text}",
+    "format": "{icon} {text}",
     "format-icons": {
-        "notification": "󰂚 ",
-        "none": "󰂜 ",
-        "dnd-notification": "󰂛 ",
-        "dnd-none": "󰂛 "
+        "notification": "󰂚",
+        "none": "󰂜",
+        "dnd-notification": "󰂛",
+        "dnd-none": "󰂛"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
@@ -94,7 +94,7 @@
   ],
 
   "clock": {
-    "format": "󰥔 {:%H:%M %d %b %y}",
+    "format": "󰥔 {:%H:%M %d, %b %Y}",
     "tooltip-format": "<tt><span font='FiraCode 10'><small>{calendar}</small></span></tt>",
     "calendar": {
         "mode": "month",
@@ -107,7 +107,7 @@
   },
 
   "pulseaudio": {
-    "format": "  {volume}%",
+    "format": " {volume}%",
     "format-muted": "  muted",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
@@ -116,8 +116,8 @@
   },
 
   "network": {
-    "format-wifi": "󰤢  {}",
-    "format-ethernet": "󰈀  {ipaddr}",
+    "format-wifi": "󰤢 {}",
+    "format-ethernet": "󰈀 {ipaddr}",
     "exec": "iwgetid -r",
     "format-linked": "󰈀  {ifname} {No IP}",
     "format-disconnected": " Disconnected",
@@ -134,9 +134,9 @@
   },
 
   "battery": {
-    "format": "{icon} {capacity}%",
+    "format": "{icon}{capacity}%",
     "format-charging": "󱐋 {capacity}%",
-    "format-full": "  100%",
+    "format-full": " 100%",
     "format-icons": [
       " ",
       " ",
