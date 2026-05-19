@@ -2,7 +2,7 @@
   "position": "top",
   "gtk-layer-shell": true,
   "exclusive": true,
-  "height": 30,
+  "height": 26,
 
   "custom/arch": {
      "format": " ",
